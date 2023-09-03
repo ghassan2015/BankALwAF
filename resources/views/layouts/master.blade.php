@@ -1836,13 +1836,14 @@
 <!--begin::Page Scripts(used by this page)-->
 <script src="{{asset('assets/js/pages/widgets.js')}}"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>--}}
+{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>--}}
 
 <script src="{{asset('assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
 <script src="{{asset('assets/js/pages/crud/datatables/basic/paginations.js')}}"></script>
 
 @yield('scripts')
+
 
 <!--end::Page Scripts-->
 </body>

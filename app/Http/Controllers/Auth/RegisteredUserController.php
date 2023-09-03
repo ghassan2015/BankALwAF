@@ -45,14 +45,15 @@ class RegisteredUserController extends Controller
         ]);
 
 
-//        foreach (config('constant.app')as$key=> $value){
-//
-//
-//            $account=Account::query()->create([
-//                'user_id'=>$user->id,
-//                'currency'=>$key,
-//                'number'=> get_order_number().$value
-//            ]);
+        foreach (config('constant.app')as$key=> $value) {
+
+
+            $account = Account::query()->create([
+                'user_id' => $user->id,
+                'currency' => $key,
+                'number' => get_order_number() . $value
+            ]);
+        }
 //            Transaction::query()->create([
 //                'account_id'=>$account->id,
 //                'amount'=>500,

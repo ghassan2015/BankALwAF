@@ -25,7 +25,7 @@ class UserTransactionController extends Controller
                 'type' => $request->type,
                 'account_id' => $account->id
             ]);
-            DB::commit();
+//            DB::commit();
             return response()->json(["status" => 201, 'message' => 'تم اضافة   بنجاح', 'redirect_url' => route('dashboard')]);
 
         } catch (\Exception $ex) {
